@@ -14,6 +14,6 @@ The pre-trained weights of these models can be downloadad at this [link](https:/
 
 ## Team:
 
-Emanuele Iacobelli: [GitHub](https://github.com/IacobelliEmanuele), [Linkedin](www.linkedin.com/in/Emanuele-Iacobelli) 
+Emanuele Iacobelli: [GitHub](https://github.com/IacobelliEmanuele), [Linkedin](https://www.linkedin.com/in/Emanuele-Iacobelli/) 
 
-Mario Edoardo Pandolfo: [GitHub](https://github.com/JRhin), [Linkedin](www.linkedin.com/in/jrhin)
+Mario Edoardo Pandolfo: [GitHub](https://github.com/JRhin), [Linkedin](https://www.linkedin.com/in/jrhin)
