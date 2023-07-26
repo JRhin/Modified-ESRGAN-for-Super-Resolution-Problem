@@ -1,12 +1,41 @@
 # Modified ESRGAN for solving the Super Resolution Problem
  
-We present a PyTorch Lightning implementation of the [ESRGAN](https://arxiv.org/pdf/1809.00219.pdf) with the supplementary usage of the wasserstein loss. In addition, we have introduced two modified models of the ESRGAN: 
+We present a PyTorch Lightning implementation of the [ESRGAN](https://arxiv.org/pdf/1809.00219.pdf) with the supplementary usage of the Wasserstein Loss.
 
-ESRGAN+IR: 
+<div style='text-align: center;'>
+  <img src='./img/ESRGAN.jpg'></img>
+  <p>ESRGAN</p>
+</div>
 
-DRGAN: 
+In addition, we have also introduced two modified models of the ESRGAN.
 
-The full explaination of these models, the dataset used for the training and the validation phases and the results obtained on the Set5 are shown in this [Google Colab Notebook](https://colab.research.google.com/drive/18OlSyFmXV3yE6B_baPHN-psWyn_5bPD3?usp=sharing). The preview of the notebook is available [here](https://github.com/IacobelliEmanuele/Modified-ESRGAN-for-Super-Resolution-Problem/blob/main/Modified_ESRGAN_for_solving_Super_Resolution_problem.ipynb).
+The full explanation of these models, the dataset used for the training and the validation phases and the results obtained on the Set5 are shown in this [Google Colab Notebook](https://colab.research.google.com/drive/18OlSyFmXV3yE6B_baPHN-psWyn_5bPD3?usp=sharing).
+
+## Our models
+
+**ESRGAN+IR**:
+
+<div style='text-align: center;'>
+  <img src='./img/ESRGAN+IR.jpg'></img>
+  <p>ESRGAN+IR</p>
+</div>
+
+In which we have simply added an *Image Restoraion* block between the *Upscale* and the *Refinement* networks.
+
+<div style='text-align: center;'>
+  <img src='./img/IR-block.jpg'></img>
+  <p>Zoom on the IR block</p>
+</div>
+
+**DRGAN**:
+
+<div style='text-align: center;'>
+  <img src='./img/DRGAN.jpg'></img>
+  <p>DRGAN</p>
+</div>
+
+Where we modified the structure of the generator: instead of upsampling directly to the dimension of the output, we double the input's dimension and then we apply in sequence a Deep Feature Extraction Network and an Upscale Network that doubles again the input's dimension in order to match thefinal resolution.
+
 
 ## Weights:
 
